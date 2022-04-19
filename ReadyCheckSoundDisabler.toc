@@ -1,0 +1,8 @@
+## Interface: 90005
+## Title: ReadyCheckSoundDisabler
+## SavedVariables: MuteReadycheckSound
+## SavedVariablesPerCharacter: MuteReadycheckSound
+## Author: Gogoncola
+## Version: 0.0.1
+
+ReadyCheckSoundDisabler.xml
