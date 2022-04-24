@@ -9,22 +9,18 @@ SlashCmdList['RCSD'] = function(msg, editbox)
 
 
     if args[0] == 'config' then
-        ReadyCheckDisablerFrame:Show()
+        ShowConfigFrame()
     elseif args[0] == 'mute' then
-        MuteReadycheckSound = true
-        DisableReadyCheckSoundCheckbox:SetChecked(MuteReadycheckSound)
-        DEFAULT_CHAT_FRAME:AddMessage("Readycheck sound is muted")
+        MuteReadyCheckSound()
     elseif args[0] == 'unmute' then
-        MuteReadycheckSound = false
-        DisableReadyCheckSoundCheckbox:SetChecked(MuteReadycheckSound)
-        DEFAULT_CHAT_FRAME:AddMessage("Readycheck sound is not muted")
+        UnMuteReadyCheckSound()
     elseif args[0] == 'help' then
-        printHelp()
+        PrintHelp()
     else
-        printHelp()
+        PrintHelp()
     end
 end
 
-function printHelp()
+function PrintHelp()
     print('|cFF00FF00 /ReadyCheckSoundDisabler [config mute unmute help]|r')
 end
